@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
 
 
                 const proxy = 'https://cors-anywhere.herokuapp.com/';
-                const api = `https://api.darksky.net/forecast/504f38cd3be0e7e5782ed5ec944ed982/${lat},${long}`;
+                const api = `${proxy}https://api.darksky.net/forecast/504f38cd3be0e7e5782ed5ec944ed982/${lat},${long}`;
                 fetch(api)
                 .then(response => {
                     return response.json();
